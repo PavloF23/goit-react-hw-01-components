@@ -22,9 +22,7 @@ export const App = () => {
       stats={user.stats}        // об'єкт з інформацією про активності
       />
     <Statistics title="Upload stats" stats={data} />
-    <Statistics stats={data} />
-
     
-    </div>
+        </div>
   );
 };
