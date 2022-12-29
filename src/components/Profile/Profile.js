@@ -1,10 +1,6 @@
 import PropTypes from 'prop-types';
 import css from './Profile.module.css';
-// import {
- 
-//     Name,
-  
-//   } from './Profile.styled';
+
 
 export function Profile({
     username,
@@ -31,11 +27,11 @@ export function Profile({
             <span className={css.label}>Followers</span>
             <span className={css.quantity}>{followers}</span>
           </li>
-          <li>
+          <li className={css.stats__item}>
             <span className={css.label}>Views</span>
             <span className={css.quantity}>{views}</span>
           </li>
-          <li>
+          <li className={css.stats__item}>
             <span className={css.label}>Likes</span>
             <span className={css.quantity}>{likes}</span>
           </li>
