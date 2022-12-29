@@ -14,7 +14,7 @@ export function Profile({
         <div className={css.description}>
           <img
             src={avatar}
-            alt="User avatar"
+            alt={username}
             className={css.avatar}
           />
           <p className={css.name}>{username}</p>
@@ -47,7 +47,3 @@ export function Profile({
     avatar: PropTypes.string.isRequired,
     stats: PropTypes.objectOf(PropTypes.number).isRequired,
   };
-
-//   const profile = (
-  
-// );
