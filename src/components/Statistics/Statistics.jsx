@@ -5,7 +5,7 @@ import { gerRendomHexColor } from './RendomColor';
 export function Statistics({ title, stats }) {
     return (
       <section className={css.stats}>
-    <h2 className={css.title}>{title}</h2>
+    {title && <h2 className={css.title}>{title}</h2>}
     <ul className={css.statList}>    
       {stats.map(stat => (
         <li className={css.statItem} style={{backgroundColor: gerRendomHexColor()}} key={stat.id}>

@@ -20,11 +20,11 @@
   background-color: #00bcd5;
   border-right: 1px solid #ffffff;
 }
-.heading:first-child {
+/* .heading:first-child {
     padding-left: 110px;
     text-align: left;
     border-left: 1px solid #00bcd5;
-  }
+  } */
   .heading:last-child {
     border-color: #00bcd5;
   }
@@ -35,7 +35,7 @@
 
 .data {
   padding: 16px;
-  width: 304px;
+  /* width: 304px; */
   text-align: center;
   border-right: 1px solid #e0e5eb;
   border-bottom: 1px solid #e0e5eb;
