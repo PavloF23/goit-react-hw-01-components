@@ -14,11 +14,12 @@ return (
   </thead>
 
   <tbody>
-  {transactions.map(transaction => (
-    <tr className={css.tableRow} key={transaction.id}>
-      <td className={css.data}>{transaction.type}</td>
-      <td className={css.data}>{transaction.amount}</td>
-      <td className={css.data}>{transaction.currency}</td>
+  {/* {transactions.map(transaction => ( без деструктуризації*/}
+    {transactions.map(({id, type, amount, currency}) => (
+    <tr className={css.tableRow} key={id}>
+      <td className={css.data}>{type}</td>
+      <td className={css.data}>{amount}</td>
+      <td className={css.data}>{currency}</td>
     </tr>
        ))}
   </tbody>
